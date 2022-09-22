@@ -36,7 +36,9 @@ export class HomeComponent implements OnInit {
   }
   refresh() {
     this.store.dispatch(refresh());
-    this.getUserList();
+    setTimeout(() => {
+      this.getUserList();
+    }, 4000);
   }
 
 }

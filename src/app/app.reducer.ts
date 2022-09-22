@@ -13,5 +13,5 @@ export const userReducer = createReducer(
   initialState,
   on(user_list_request, (state: any) => ({...state,...{loading:true,loaded:true}})),
   on(user_list_success, (state: any,{user}) => ({...state,...{loading:true,loaded:true,user:user}})),
-  on(refresh, (state: any) => ({...state,...{loading:false,loaded:false}}))
+  on(refresh, (state: any) => ({...state,...{loading:false,loaded:false,user:[]}}))
 );
