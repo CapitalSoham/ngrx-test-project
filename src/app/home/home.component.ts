@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   public user_data: any;
   public loaded:any;
   public loading:any;
+  displayedColumns: string[] = ['id', 'name', 'email', 'username', 'phone', 'website'];
   //you need to set same name as defined in [ like app.modules -> StoreModule.forRoot({users: userReducer}) ]
   constructor(public store: Store<{users:any}>, public apiService: HttpServiceService) { }
 

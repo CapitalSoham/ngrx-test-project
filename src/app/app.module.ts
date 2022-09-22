@@ -9,7 +9,12 @@ import { AboutComponent } from './about/about.component';
 import { userReducer } from './app.reducer';
 import { HeaderComponent } from './header/header.component';
 import { HttpServiceService } from './service/http-service.service';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +26,11 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({users: userReducer})
+    StoreModule.forRoot({users: userReducer}),
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatListModule,
+    MatTableModule
   ],
   providers: [HttpServiceService],
   bootstrap: [AppComponent]
