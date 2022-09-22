@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { refresh, user_list_request, user_list_success } from '../app.actions';
-import { UserReducerState } from '../app.reducer';
 import { HttpServiceService } from '../service/http-service.service';
 @Component({
   selector: 'app-home',
@@ -13,7 +12,7 @@ export class HomeComponent implements OnInit {
   public loaded:any;
   public loading:any;
   //you need to set same name as defined in [ like app.modules -> StoreModule.forRoot({users: userReducer}) ]
-  constructor(public store: Store<{users:UserReducerState}>, public apiService: HttpServiceService) { }
+  constructor(public store: Store<{users:any}>, public apiService: HttpServiceService) { }
 
   ngOnInit(): void {
     this.getUserList();
