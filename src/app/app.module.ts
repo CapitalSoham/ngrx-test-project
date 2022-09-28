@@ -14,6 +14,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
+import { UniquePipePipe } from './service/unique-pipe.pipe';
+import { ViewUserComponent } from './view-user/view-user.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +25,8 @@ import { MatTableModule } from '@angular/material/table';
     HomeComponent,
     AboutComponent,
     HeaderComponent,
+    UniquePipePipe,
+    ViewUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,8 @@ import { MatTableModule } from '@angular/material/table';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [HttpServiceService],
   bootstrap: [AppComponent]
