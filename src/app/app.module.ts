@@ -15,7 +15,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
-import { UniquePipePipe } from './service/unique-pipe.pipe';
 import { ViewUserComponent } from './view-user/view-user.component';
 
 
@@ -25,7 +24,6 @@ import { ViewUserComponent } from './view-user/view-user.component';
     HomeComponent,
     AboutComponent,
     HeaderComponent,
-    UniquePipePipe,
     ViewUserComponent,
   ],
   imports: [

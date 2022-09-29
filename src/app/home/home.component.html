@@ -2,7 +2,7 @@
 <label for="cars">Search by Company Name:</label>
 <select name="company" [(ngModel)]="company" (ngModelChange)="drop()">
     <option value="" selected>Select a company</option>
-    <option *ngFor="let cmp of company_data" [value]="cmp.company.name">{{cmp.company.name}}</option>
+    <option *ngFor="let cmp of Companys_list" [value]="cmp">{{cmp}}</option>
 </select>
 
 <table mat-table [dataSource]="user_data" class="mat-elevation-z8">
