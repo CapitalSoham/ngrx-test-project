@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="header">
+<!-- <mat-toolbar color="primary" class="header">
 	<mat-nav-list class="list-horizontal">
      <mat-list-item>
       <button [routerLink]="['/']" class="btn btn-info nav-button">Home</button>
@@ -7,4 +7,28 @@
         <button [routerLink]="['/about']" class="btn btn-info nav-button">About</button>
       </mat-list-item>
   </mat-nav-list>
-</mat-toolbar>
+</mat-toolbar> -->
+
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer [mode]="'side'">
+    <mat-list-item>
+      <button mat-button color="accent" [routerLink]="['/']">Home</button>
+    </mat-list-item><br>
+    <mat-list-item>
+      <button mat-button color="accent" [routerLink]="['/about']">About</button>
+    </mat-list-item>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div>
+      <button mat-button color="accent" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->

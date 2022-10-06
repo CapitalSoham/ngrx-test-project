@@ -1,4 +1,4 @@
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 body {
     font-family: Roboto, Arial, sans-serif;
@@ -11,10 +11,10 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
-}
+} */
 
 /* here's what you're looking for B-) */
-.header .list-horizontal {
+/* .header .list-horizontal {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -35,4 +35,12 @@ body {
     color: #fff;
     background-color: #00000000!important;
     border-color: #00000000!important;
-}
+} */
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }

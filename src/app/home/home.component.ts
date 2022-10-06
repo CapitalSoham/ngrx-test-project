@@ -10,6 +10,7 @@ import { of, distinct } from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public shouldRun = false;
   public user_data: any;
   public company_data: any;
   public loaded: any;

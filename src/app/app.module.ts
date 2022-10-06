@@ -9,13 +9,18 @@ import { AboutComponent } from './about/about.component';
 import { userReducer } from './app.reducer';
 import { HeaderComponent } from './header/header.component';
 import { HttpServiceService } from './service/http-service.service';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { ViewUserComponent } from './view-user/view-user.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import {MatIconModule} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -30,12 +35,17 @@ import { ViewUserComponent } from './view-user/view-user.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({users: userReducer}),
+    StoreModule.forRoot({ users: userReducer }),
     BrowserAnimationsModule,
     MatToolbarModule,
     MatListModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [HttpServiceService],
   bootstrap: [AppComponent]
