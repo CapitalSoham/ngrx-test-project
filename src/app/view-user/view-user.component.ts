@@ -14,7 +14,7 @@ export class ViewUserComponent implements OnInit {
     console.log(this.router.snapshot.params);
     this.apiService.getUser(this.router.snapshot.params).subscribe((user: any) => {
       console.log(user.data);
-      this.user_data = user.data;
+      this.user_data = user.data[0];
     })
   }
 

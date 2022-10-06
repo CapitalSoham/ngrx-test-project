@@ -1,1 +1,10 @@
-<p>{{user_data | json}}</p>
+<!-- <p >{{user_data | json}}</p> -->
+<div class="view_details">
+    <h1>User Details</h1>
+    <label>Name: <span>{{user_data.name}}</span></label><br>
+    <label>Email: <span>{{user_data.email}}</span></label><br>
+    <label>User Name: <span>{{user_data.username}}</span></label><br>
+    <label>Phone: <span>{{user_data.phone}}</span></label><br>
+    <label>Website: <span>{{user_data.website}}</span></label><br>
+    <label>Company: <span>{{user_data.company.name}}</span></label><br>
+</div>
